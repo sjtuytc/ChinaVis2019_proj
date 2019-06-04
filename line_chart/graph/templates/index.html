@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>speedview</title>
+
+    <link href="../static/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../static/jquery-2.2.2.min.js"></script>
+    <script src = "https://echarts.baidu.com/dist/echarts.js"></script>
+
+</head>
+<body>
+<script src="../static/display.js"></script>
+<div id = "flow_pic"></div>
+<div id="speed_all"></div>
+<script>
+    function add_post(str_all){
+        added = [];
+        for (i=0; i<str_all.length; i++)
+        {
+            // temp = str_all[i].replace(/"/g,"'")+'km';
+            temp = 'km';
+            // temp = temp.replace(/"/g,"'");
+
+            added.push(temp);
+        }
+        console.log(added);
+        return added;
+    }
+    latitude = 30.49894;
+    longitude = 104.08133;
+    time_unit=600;
+    // get_flow(latitude,longitude,time_unit);
+    $.ajax({
+        type: 'GET',
+            url: server_url+"/get_speed/",
+            data:{
+                'latitude':latitude,
+                'longitude':longitude,
+                'time_unit':time_unit,
+            },
+            dataType: 'json',
+            contentType: "application/json",
+            success: function(our_data,i) {
+
+                let time_data = {};
+                let str_all = ['0.0','0.3','1.0'];
+                let legend_all=["据赛事中心0.3km内",'距赛事中心0.3km-1.0km','据赛事中心1.0km-10.0km'];
+                for (j=0; j<str_all.length;j++){
+                    tempstr = str_all[j];
+                    time_data[tempstr] = [];
+                    for(i=0;i<our_data[tempstr].length;i++){
+                        time_data[tempstr].push([(+our_data[tempstr][i].value[0])*1000,+our_data[tempstr][i].value[1]])
+                    }
+                }
+
+                var dom = document.getElementById("flow_pic");
+
+                var myChart = echarts.init(dom);
+                var app = {};
+                option = null;
+                option = {
+        title: {
+            text: 'Beijing AQI'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        xAxis: {
+                        type: 'time',
+                        splitLine: {
+                            show: false
+                        }
+        },
+        yAxis: {
+            splitLine: {
+                show: false
+            }
+        },
+        // toolbox: {
+        //     left: 'center',
+        //     feature: {
+        //         dataZoom: {
+        //             yAxisIndex: 'none'
+        //         },
+        //         restore: {},
+        //         saveAsImage: {}
+        //     }
+        // },
+        dataZoom: [{
+            startValue: '2018-05-01'
+        }, {
+            type: 'inside'
+        }],
+        visualMap: {
+            top: 10,
+            right: 10,
+            pieces: [{
+                gt: 0,
+                lte: 20,
+                color: '#096'
+            }, {
+                gt: 20,
+                lte: 25,
+                color: '#ffde33'
+            }, {
+                gt: 25,
+                lte: 30,
+                color: '#ff9933'
+            }, {
+                gt: 30,
+                lte: 35,
+                color: '#cc0033'
+            }, {
+                gt: 35,
+                lte: 40,
+                color: '#660099'
+            }, {
+                gt: 40,
+                color: '#7e0023'
+            }],
+            outOfRange: {
+                color: '#999'
+            }
+        },
+        color: ['#000','#000','#000'],
+        legend: {
+            data:legend_all
+        },
+
+        series: [{
+                        name: legend_all[0],
+                        type: 'line',
+                        symbol:'star',//拐点样式
+                        symbolSize: 8,//拐点大小
+                        // hoverAnimation: false,
+                        data: time_data[str_all[0]],
+                        markLine: {
+                                silent: true,
+                                data: [{
+                                    yAxis: 20
+                                }, {
+                                    yAxis: 25
+                                }, {
+                                    yAxis: 30
+                                }, {
+                                    yAxis: 35
+                                }, {
+                                    yAxis: 40
+                                }, {
+                                    yAxis: 45
+                                }]
+                        }
+        },{
+                        name: legend_all[1],
+                        type: 'line',
+                        symbolSize: 8,//拐点大小
+                        // hoverAnimation: false,
+                        data: time_data[str_all[1]],
+        },{
+                        name: legend_all[2],
+                        type: 'line',
+                        symbol:'triangle',//拐点样式
+                        symbolSize: 8,//拐点大小
+                        // hoverAnimation: false,
+                        data: time_data[str_all[2]],
+        }]
+
+    };
+                // // var data = our_data;
+                // option = {
+                //     title: {
+                //         text: '速度分析'
+                //     },
+                //     tooltip: {
+                //         trigger: 'axis',
+                //         formatter: function (params) {
+                //             params = params[0];
+                //             // console.log(params.data[0]);
+                //             var time = new Date(+params.data[0]);
+                //             return time.getHours()+":"+time.getMinutes() + ",    " + params.data[1];
+                //         },
+                //         axisPointer: {
+                //             animation: false
+                //         }
+                //     },
+                //     legend: {
+                //         data:legend_all
+                //     },
+                //     xAxis: {
+                //         type: 'time',
+                //         splitLine: {
+                //             show: false
+                //         }
+                //     },
+                //     yAxis: {
+                //         type: 'value',
+                //         boundaryGap: [0, '5%'],
+                //         splitLine: {
+                //             show: false
+                //         }
+                //     },
+                //     series: [{
+                //         name: str_all[0],
+                //         type: 'line',
+                //         showSymbol: false,
+                //         // hoverAnimation: false,
+                //         data: time_data[str_all[0]],
+                //         markLine: {
+                //                 silent: true,
+                //                 data: [{
+                //                     yAxis: 10
+                //                 }, {
+                //                     yAxis: 20
+                //                 }, {
+                //                     yAxis:  30
+                //                 }, {
+                //                     yAxis: 200
+                //                 }, {
+                //                     yAxis: 300
+                //                 }]
+                //         }
+                //     },{
+                //         name: str_all[1],
+                //         type: 'line',
+                //         showSymbol: false,
+                //         // hoverAnimation: false,
+                //         data: time_data[str_all[1]],
+                //         markLine: {
+                //                 silent: true,
+                //                 data: [{
+                //                     yAxis: 10
+                //                 }, {
+                //                     yAxis: 20
+                //                 }, {
+                //                     yAxis:  30
+                //                 }, {
+                //                     yAxis: 200
+                //                 }, {
+                //                     yAxis: 300
+                //                 }]
+                //         }
+                //     }, {
+                //         name: str_all[2],
+                //         type: 'line',
+                //         showSymbol: false,
+                //         // hoverAnimation: false,
+                //         data: time_data[str_all[2]],
+                //         markLine: {
+                //                 silent: true,
+                //                 data: [{
+                //                     yAxis: 10
+                //                 }, {
+                //                     yAxis: 20
+                //                 }, {
+                //                     yAxis:  30
+                //                 }, {
+                //                     yAxis: 200
+                //                 }, {
+                //                     yAxis: 300
+                //                 }]
+                //         }
+                //     }
+                //     ]
+                // };
+                if (option && typeof option === "object") {
+                    myChart.setOption(option, true);
+                }
+
+            },
+            error: function(xhr, type) {
+                alert("error")
+            },
+        });
+</script>
+</body>
+</html>

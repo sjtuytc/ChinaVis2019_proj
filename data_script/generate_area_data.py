@@ -48,7 +48,7 @@ mini文件
 
 import json
 import collections
-
+from IPython import embed
 
 # hyper parameter
 data_path = "./data/1.txt"
@@ -115,6 +115,7 @@ with open(data_path, 'r') as f:
         order_data["time"] = time
         order_data["longitude"] = longitude
         order_data["latitude"] = latitude
+
         if label in all_area_data["data"].keys():
             if time_label in all_area_data["data"][label].keys():
                 all_area_data["data"][label][time_label]["count"] += 1
@@ -149,7 +150,3 @@ with open(output_path,'w') as writer:
 
 with open(output_mini_path,'w') as writer:
     writer.write(json.dumps(all_area_data_mini))
-
-
-
-

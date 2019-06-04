@@ -5,7 +5,7 @@
       <paths name="900">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/media/data_1/home/zelin/chinavis" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
