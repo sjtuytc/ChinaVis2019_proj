@@ -64,6 +64,8 @@ center_long = 104.061
 center_lat = 30.510
 lower_bound = 1.0
 higher_bound = 10.0
+start_time = 1525104000
+end_time = 1525190340
 
 output_path = "./data/speed_data_thre%.1f.json" % (lower_bound)
 

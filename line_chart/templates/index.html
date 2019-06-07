@@ -7,9 +7,9 @@
 	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 		<title>速度综合分析</title>
-		<link rel="stylesheet" href="{{url_for('static',filename='./css/bootstrap.min.css')}}"/>
-		<link rel="stylesheet" href="{{url_for('static',filename='./css/app.css')}}" />
-		<script src="{{ url_for('static',filename='./js/echarts-bmap.js')}}"></script>
+		<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}"/>
+		<link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}" />
+		<script src="{{ url_for('static',filename='js/echarts-bmap.js')}}"></script>
 	</head>
 
 	<body class="bg02">
@@ -20,22 +20,17 @@
 		<div class="wrapper">
 			<div class="container-fluid">
 				<div class="row fill-h">
-					<div class="col-lg-7 fill-h">
-						<div class="xpanel-wrapper xpanel-wrapper-1">
+					<div class="col-lg-5 fill-h" style="width:50%;">
+						<div class="xpanel-wrapper xpanel-wrapper-1" style="height:60%;">
 							<div class="xpanel">
 								<div class="fill-h" id="speed_graph" style="background-color: #cdffe6;"></div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-5 fill-h">
-						<div class="xpanel-wrapper xpanel-wrapper-2">
+					<div class="col-lg-5 fill-h" style="width:50%;">
+						<div class="xpanel-wrapper xpanel-wrapper-1" style="height:100%">
 							<div class="xpanel">
-								<div class="fill-h" id="heatmapChart"></div>
-							</div>
-						</div>
-						<div class="xpanel-wrapper xpanel-wrapper-2">
-							<div class="xpanel">
-								<div class="fill-h" id="coordChart"></div>
+								<div class="fill-h" id="speed_scatter" style="background-color: #cdffe6;"></div>
 							</div>
 						</div>
 					</div>
@@ -43,162 +38,97 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
-		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=c6pIzPd8WxIKNAb3HxWSpboGhsS1ErDR"></script>
+		<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=c6pIzPd8WxIKNAb3HxWSpboGhsS1ErDR"></script>-->
 		<script type="text/javascript" src="{{ url_for('static', filename='js/echarts-3.8.5.min.js') }}"></script>
 		<script type="text/javascript" src="{{ url_for('static', filename='js/echarts-bmap.js')}}"></script>
 		<script type="text/javascript">
-	server_url = "http://127.0.0.1:2346";
-    latitude = 30.49894;
-    longitude = 104.08133;
-    time_unit=600;
-    // get_flow(latitude,longitude,time_unit);
-    $.ajax({
+		server_url = "http://127.0.0.1:2346";
+		latitude = 30.49894;
+		longitude = 104.08133;
+		time_unit=600;
+		</script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/three_speed_within.js')}}"></script>
+		<script type="text/javascript" >
+		$.ajax({
         type: 'GET',
-            url: server_url+"/get_speed/",
+            url: server_url+"/get_scatter_speed/",
             data:{
-                'latitude':latitude,
-                'longitude':longitude,
-                'time_unit':time_unit,
             },
             dataType: 'json',
             contentType: "application/json",
             success: function(our_data,i) {
-
-                let time_data = {};
-                let str_all = ['0.0','0.3','1.0'];
-                let legend_all=["据赛事中心0.3km内",'距赛事中心0.3km-1.0km','据赛事中心1.0km-10.0km'];
-                for (j=0; j<str_all.length;j++){
-                    tempstr = str_all[j];
-                    time_data[tempstr] = [];
-                    for(i=0;i<our_data[tempstr].length;i++){
-                        time_data[tempstr].push([(+our_data[tempstr][i].value[0])*1000,+our_data[tempstr][i].value[1]])
-                    }
-                }
-
-                var dom = document.getElementById("speed_graph");
+				var dom = document.getElementById("speed_scatter");
 				var myChart = echarts.init(dom);
-                dom.style.backgroundColor = "#cdffe6";
+var xData = [];
+var yData = [];
+function generateData(theta, min, max) {
+    var data = [];
+    var counter = 0;
+    for (var i = 0; i < 200; i++) {
+        for (var j = 0; j < 90; j++) {
 
-                var app = {};
-                option = null;
-                option = {
-        title: {
-            text: '区域平均速度分析',
+			console.log(counter);
+            data.push([i, j, our_data[counter][2]]);
+            counter++;
+            // data.push([i, j, normalDist(theta, x) * normalDist(theta, y)]);
+        }
+        xData.push(parseInt(i/200*24));
+    }
+    for (var j = 0; j < 90; j++) {
+        yData.push(j);
+    }
+    return data;
+}
+var data = generateData(2, -5, 5);
+
+option = {
+       title: {
+            text: '速度随时间变化热力图',
             x:'center'
         },
-		grid: {
-            x:100,
-			y:100,
-			x2:100,
-			y2:100,
-		},
-		backgroundColor:'#cdffe6',
-        tooltip: {
-            trigger: 'axis'
-        },
-        xAxis: {
-                        type: 'time',
-                        splitLine: {
-                            show: false
-                        }
-        },
-        yAxis: {
-            min:10,
-            splitLine: {
-                show: false
+    tooltip: {},
+    xAxis: {
+        type: 'category',
+        data: xData
+    },
+    yAxis: {
+        type: 'category',
+        data: yData
+    },
+	backgroundColor:'#001a61',
+    visualMap: {
+        min: 0,
+        max: 1,
+        calculable: true,
+        realtime: false,
+        inRange: {
+            color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+        }
+    },
+    series: [{
+        name: 'Gaussian',
+        type: 'heatmap',
+        data: data,
+        itemStyle: {
+            emphasis: {
+                borderColor: '#333',
+                borderWidth: 1
             }
         },
-        dataZoom: [{
-            startValue: '2018-05-01'
-        }, {
-            type: 'inside'
-        }],
-        visualMap: {
-            top: 10,
-            right : -10,
-            pieces: [{
-                gt: 0,
-                lte: 20,
-                color: '#096'
-            }, {
-                gt: 20,
-                lte: 25,
-                color: '#ffde33'
-            }, {
-                gt: 25,
-                lte: 30,
-                color: '#ff9933'
-            }, {
-                gt: 30,
-                lte: 35,
-                color: '#cc0033'
-            }, {
-                gt: 35,
-                lte: 40,
-                color: '#660099'
-            }, {
-                gt: 40,
-                color: '#7e0023'
-            }],
-            outOfRange: {
-                color: '#999'
-            }
-        },
-        color: ['#000','#000','#000'],
-        legend: {
-            top:30,
-            data:legend_all
-        },
+        progressive: 1000,
+        animation: false
+    }]
+};
 
-        series: [{
-                        name: legend_all[0],
-                        type: 'line',
-                        symbol:'star',//拐点样式
-                        symbolSize: 8,//拐点大小
-                        // hoverAnimation: false,
-                        data: time_data[str_all[0]],
-                        markLine: {
-                                silent: true,
-                                data: [{
-                                    yAxis: 20
-                                }, {
-                                    yAxis: 25
-                                }, {
-                                    yAxis: 30
-                                }, {
-                                    yAxis: 35
-                                }, {
-                                    yAxis: 40
-                                }, {
-                                    yAxis: 45
-                                }]
-                        }
-        },{
-                        name: legend_all[1],
-                        type: 'line',
-                        symbolSize: 8,//拐点大小
-                        // hoverAnimation: false,
-                        data: time_data[str_all[1]],
-        },{
-                        name: legend_all[2],
-                        type: 'line',
-                        symbol:'triangle',//拐点样式
-                        symbolSize: 8,//拐点大小
-                        // hoverAnimation: false,
-                        data: time_data[str_all[2]],
-        }]
-
-    };
                 if (option && typeof option === "object") {
                     myChart.setOption(option, true);
                 }
-			dom.style.backgroundColor = "#cdffe6";
+			dom.style.backgroundColor = "#d8ffdc";
             },
             error: function(xhr, type) {
                 alert("error")
             },
         });
-        </script>
-
+		</script>
 	</body>
 </html>
