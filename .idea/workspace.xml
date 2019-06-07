@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a8610b-6d63-4738-a1a7-46fbf6d44c3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_script/generate_speed_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_script/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/data/speed_data_thre0.0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/data/speed_data_thre0.3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/data/speed_data_thre1.0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_area_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_script/generate_speed_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/.idea/graph.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/data/speed_data_thre0.0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/data/speed_data_thre0.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/data/speed_data_thre1.0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/static/display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/static/echarts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/static/jquery-2.2.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/graph/templates/index.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,61 +31,86 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$generate_area_data.coverage" NAME="generate_area_data Coverage Results" MODIFIED="1559462127463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
-    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server.coverage" NAME="server Coverage Results" MODIFIED="1559550380620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/line_chart/graph" />
+    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server.coverage" NAME="server Coverage Results" MODIFIED="1559890445788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/line_chart/graph" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$generate_speed_data.coverage" NAME="generate_speed_data Coverage Results" MODIFIED="1559561457336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
+    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1559820623484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
+    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$flow_data_generation.coverage" NAME="flow_data_generation Coverage Results" MODIFIED="1559876558556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
+    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1559890864232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/line_chart" />
+    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$app.coverage" NAME="app Coverage Results" MODIFIED="1559892536834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/combined_graph1.0" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="569193674">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="12" />
-          <entry key="js" value="1" />
-          <entry key="py" value="20" />
+          <entry key="html" value="26" />
+          <entry key="js" value="3" />
+          <entry key="py" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="12" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Python" value="20" />
+          <entry key="HTML" value="26" />
+          <entry key="JavaScript" value="3" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="35" />
-          <entry key="html" value="1082" />
+          <entry key="Python Console" value="56" />
+          <entry key="html" value="1709" />
           <entry key="js" value="1" />
-          <entry key="py" value="3068" />
+          <entry key="py" value="4899" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1082" />
+          <entry key="HTML" value="1709" />
           <entry key="JavaScript" value="1" />
-          <entry key="Python" value="3103" />
+          <entry key="Python" value="4955" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/line_chart/graph/server.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/combined_graph1.0/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="-9">
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/combined_graph1.0/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/line_chart/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -78,45 +118,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/line_chart/graph/templates/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/line_chart/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-547">
-              <caret line="48" column="79" selection-start-line="48" selection-start-column="79" selection-end-line="48" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_script/generate_speed_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1550">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="365">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
-                <element signature="e#1296#1307#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_script/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1559546699690" expanded="true" signature="419:424" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/搜狗高速下载/line-aqi.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2675">
-              <caret line="107" column="3" selection-start-line="107" selection-start-column="3" selection-end-line="107" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -132,11 +141,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fashion</find>
       <find>if</find>
       <find>label</find>
       <find>all_area_data</find>
-      <find>embed</find>
       <find>output_path</find>
       <find>http://news.chengdu.cn/2018/0428/1969210.shtml</find>
       <find>longitude_start</find>
@@ -144,9 +151,26 @@
       <find>add_post</find>
       <find>order_data</find>
       <find>pre</find>
-      <find>time_unit</find>
       <find>legend</find>
       <find>thre</find>
+      <find>display</find>
+      <find>beijing</find>
+      <find>center</find>
+      <find>setoption</find>
+      <find>time_unit</find>
+      <find>time_list</find>
+      <find>json</find>
+      <find>NumpyEncoder</find>
+      <find>alert</find>
+      <find>json.lo</find>
+      <find>result</find>
+      <find>500</find>
+      <find>$</find>
+      <find>error</find>
+      <find>embed</find>
+      <find>emb</find>
+      <find>server</find>
+      <find>dom.</find>
     </findStrings>
     <replaceStrings>
       <replace>all_speed_data</replace>
@@ -162,9 +186,15 @@
         <option value="$PROJECT_DIR$/data_script/generate_area_data.py" />
         <option value="D:/搜狗高速下载/line-aqi.html" />
         <option value="$PROJECT_DIR$/data_script/utils.py" />
-        <option value="$PROJECT_DIR$/line_chart/graph/server.py" />
+        <option value="$PROJECT_DIR$/graph/server.py" />
+        <option value="$PROJECT_DIR$/graph/templates/index.html" />
         <option value="$PROJECT_DIR$/data_script/generate_speed_data.py" />
         <option value="$PROJECT_DIR$/line_chart/graph/templates/index.html" />
+        <option value="$PROJECT_DIR$/data_script/flow_data_generation.py" />
+        <option value="$PROJECT_DIR$/line_chart/graph/server.py" />
+        <option value="$PROJECT_DIR$/combined_graph1.0/app.py" />
+        <option value="$PROJECT_DIR$/combined_graph1.0/templates/index.html" />
+        <option value="$PROJECT_DIR$/line_chart/templates/index.html" />
       </list>
     </option>
   </component>
@@ -174,11 +204,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="25" />
-    <option name="y" value="45" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -198,7 +228,13 @@
             <path>
               <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="data_script" type="462c0819:PsiDirectoryNode" />
+              <item name="combined_graph1.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="combined_graph1.0" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
@@ -209,7 +245,7 @@
               <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
               <item name="line_chart" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,8 +263,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph\data" />
+      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph\static" />
+      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph" />
       <recent name="D:\github\datavis\ChinaVis2019_proj\data_script" />
+      <recent name="D:\github\datavis\ChinaVis2019_proj\graph\data" />
+      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph\data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.generate_speed_data">
+  <component name="RunManager" selected="Python.app">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ChinaVis2019_proj" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -266,7 +305,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generate_area_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ChinaVis2019_proj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\conda\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/combined_graph1.0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/combined_graph1.0/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flow_data_generation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ChinaVis2019_proj" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,7 +340,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_script/generate_area_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_script/flow_data_generation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -288,23 +349,45 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generate_speed_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="server (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ChinaVis2019_proj" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_script" />
+      <option name="SDK_HOME" value="D:\conda\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graph" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_script/generate_speed_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ChinaVis2019_proj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\conda\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/line_chart" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/line_chart/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -351,14 +434,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.server" />
-      <item itemvalue="Python.generate_area_data" />
-      <item itemvalue="Python.generate_speed_data" />
+      <item itemvalue="Python.server (1)" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.flow_data_generation" />
+      <item itemvalue="Python.server (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.generate_speed_data" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.server (2)" />
         <item itemvalue="Python.server" />
-        <item itemvalue="Python.generate_area_data" />
+        <item itemvalue="Python.flow_data_generation" />
+        <item itemvalue="Python.server (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -385,15 +472,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22252011" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30187416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42492917" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3022599" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37482318" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.43281472" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32768363" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22788204" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23512748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4688385" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,30 +516,6 @@
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.33427763" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.43342775" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.3286119" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14544237" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3696884" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4688385" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33427763" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.43342775" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -501,24 +588,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/conda/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="2308" selection-start-line="2308" selection-end-line="2308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/conda/Lib/selectors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="314" selection-start-line="314" selection-end-line="314" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_script/generate_area_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -551,11 +624,6 @@
         <state relative-caret-position="-2400" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iDataV/case03/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2400" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iDataV/case02/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -568,24 +636,10 @@
     <entry file="file://$PROJECT_DIR$/iDataV/case07/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_script/generate_speed_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#1296#1307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_script/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1559546699690" expanded="true" signature="419:424" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,19 +650,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/line_chart/graph/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/graph/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-547">
-          <caret line="48" column="79" selection-start-line="48" selection-start-column="79" selection-end-line="48" selection-end-column="79" />
+        <state relative-caret-position="812">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/static/display.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iDataV/case03/js/echarts-bmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/conda/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="1220" selection-start-line="1220" selection-end-line="1220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/generate_speed_data.py" />
+    <entry file="file://$PROJECT_DIR$/data_script/generate_flow_data.py" />
+    <entry file="file://$PROJECT_DIR$/data_script/generate_area_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/speed_data_generation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-446" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iDataV/case03/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="251" column="7" lean-forward="true" selection-start-line="251" selection-start-column="7" selection-end-line="251" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/line_chart/graph/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="450">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/graph/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/flow_data_generation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1473">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding>
+            <element signature="e#180#191#0" expanded="true" />
+            <marker date="1559890348144" expanded="true" signature="2371:2921" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="78" column="42" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

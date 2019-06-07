@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<title>速度综合分析</title>
+		<link rel="stylesheet" href="{{url_for('static',filename='./css/bootstrap.min.css')}}"/>
+		<link rel="stylesheet" href="{{url_for('static',filename='./css/app.css')}}" />
+		<script src="{{ url_for('static',filename='./js/echarts-bmap.js')}}"></script>
+	</head>
+
+	<body class="bg02">
+		<header class="header">
+			<h3>速度综合分析</h3>
+		</header>
+
+		<div class="wrapper">
+			<div class="container-fluid">
+				<div class="row fill-h">
+					<div class="col-lg-7 fill-h">
+						<div class="xpanel-wrapper xpanel-wrapper-1">
+							<div class="xpanel">
+								<div class="fill-h" id="speed_graph" style="background-color: #cdffe6;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 fill-h">
+						<div class="xpanel-wrapper xpanel-wrapper-2">
+							<div class="xpanel">
+								<div class="fill-h" id="heatmapChart"></div>
+							</div>
+						</div>
+						<div class="xpanel-wrapper xpanel-wrapper-2">
+							<div class="xpanel">
+								<div class="fill-h" id="coordChart"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=c6pIzPd8WxIKNAb3HxWSpboGhsS1ErDR"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/echarts-3.8.5.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/echarts-bmap.js')}}"></script>
+		<script type="text/javascript">
+	server_url = "http://127.0.0.1:2346";
+    latitude = 30.49894;
+    longitude = 104.08133;
+    time_unit=600;
+    // get_flow(latitude,longitude,time_unit);
+    $.ajax({
+        type: 'GET',
+            url: server_url+"/get_speed/",
+            data:{
+                'latitude':latitude,
+                'longitude':longitude,
+                'time_unit':time_unit,
+            },
+            dataType: 'json',
+            contentType: "application/json",
+            success: function(our_data,i) {
+
+                let time_data = {};
+                let str_all = ['0.0','0.3','1.0'];
+                let legend_all=["据赛事中心0.3km内",'距赛事中心0.3km-1.0km','据赛事中心1.0km-10.0km'];
+                for (j=0; j<str_all.length;j++){
+                    tempstr = str_all[j];
+                    time_data[tempstr] = [];
+                    for(i=0;i<our_data[tempstr].length;i++){
+                        time_data[tempstr].push([(+our_data[tempstr][i].value[0])*1000,+our_data[tempstr][i].value[1]])
+                    }
+                }
+
+                var dom = document.getElementById("speed_graph");
+				var myChart = echarts.init(dom);
+                dom.style.backgroundColor = "#cdffe6";
+
+                var app = {};
+                option = null;
+                option = {
+        title: {
+            text: '区域平均速度分析',
+            x:'center'
+        },
+		grid: {
+            x:100,
+			y:100,
+			x2:100,
+			y2:100,
+		},
+		backgroundColor:'#cdffe6',
+        tooltip: {
+            trigger: 'axis'
+        },
+        xAxis: {
+                        type: 'time',
+                        splitLine: {
+                            show: false
+                        }
+        },
+        yAxis: {
+            min:10,
+            splitLine: {
+                show: false
+            }
+        },
+        dataZoom: [{
+            startValue: '2018-05-01'
+        }, {
+            type: 'inside'
+        }],
+        visualMap: {
+            top: 10,
+            right : -10,
+            pieces: [{
+                gt: 0,
+                lte: 20,
+                color: '#096'
+            }, {
+                gt: 20,
+                lte: 25,
+                color: '#ffde33'
+            }, {
+                gt: 25,
+                lte: 30,
+                color: '#ff9933'
+            }, {
+                gt: 30,
+                lte: 35,
+                color: '#cc0033'
+            }, {
+                gt: 35,
+                lte: 40,
+                color: '#660099'
+            }, {
+                gt: 40,
+                color: '#7e0023'
+            }],
+            outOfRange: {
+                color: '#999'
+            }
+        },
+        color: ['#000','#000','#000'],
+        legend: {
+            top:30,
+            data:legend_all
+        },
+
+        series: [{
+                        name: legend_all[0],
+                        type: 'line',
+                        symbol:'star',//拐点样式
+                        symbolSize: 8,//拐点大小
+                        // hoverAnimation: false,
+                        data: time_data[str_all[0]],
+                        markLine: {
+                                silent: true,
+                                data: [{
+                                    yAxis: 20
+                                }, {
+                                    yAxis: 25
+                                }, {
+                                    yAxis: 30
+                                }, {
+                                    yAxis: 35
+                                }, {
+                                    yAxis: 40
+                                }, {
+                                    yAxis: 45
+                                }]
+                        }
+        },{
+                        name: legend_all[1],
+                        type: 'line',
+                        symbolSize: 8,//拐点大小
+                        // hoverAnimation: false,
+                        data: time_data[str_all[1]],
+        },{
+                        name: legend_all[2],
+                        type: 'line',
+                        symbol:'triangle',//拐点样式
+                        symbolSize: 8,//拐点大小
+                        // hoverAnimation: false,
+                        data: time_data[str_all[2]],
+        }]
+
+    };
+                if (option && typeof option === "object") {
+                    myChart.setOption(option, true);
+                }
+			dom.style.backgroundColor = "#cdffe6";
+            },
+            error: function(xhr, type) {
+                alert("error")
+            },
+        });
+        </script>
+
+	</body>
+</html>
