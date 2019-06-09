@@ -38,7 +38,7 @@ $.ajax({
 		// 	y2:100,
 		// },
 
-		backgroundColor:'#eafff4',
+		// backgroundColor:'#eafff4',
         tooltip: {
             trigger: 'axis'
         },
@@ -156,7 +156,7 @@ $.ajax({
             contentType: "application/json",
             success: function(our_data,i) {
 				var dom = document.getElementById("speed_scatter");
-				var myChart = echarts.init(dom,'shine');
+				var myChart = echarts.init(dom,'dark');
 var xData = [];
 var yData = [];
 function generateData(theta, min, max) {
@@ -196,7 +196,7 @@ option = {
         type: 'category',
         data: yData
     },
-	backgroundColor:'#eafff4',
+	// backgroundColor:'#eafff4',
     visualMap: {
 		show:true,
 		orient:"horizontal",

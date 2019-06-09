@@ -8,8 +8,13 @@
 		<title>动态交通可视化分析系统</title>
 		<link rel="stylesheet" href="{{url_for('static',filename='./css/bootstrap.min.css')}}"/>
 		<link rel="stylesheet" href="{{url_for('static',filename='./css/app.css')}}" />
-		<script src="{{ url_for('static',filename='./js/echarts-bmap.js')}}"></script>
-	</head>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=c6pIzPd8WxIKNAb3HxWSpboGhsS1ErDR"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/echarts-3.8.5.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/echarts-bmap.js')}}"></script>
+        <script src="{{ url_for('static',filename='./js/echarts-bmap.js')}}"></script>
+		<script src="{{ url_for('static',filename='./js/dark.js')}}"></script>
+    </head>
 
 	<body class="bg02">
 		<header class="header">
@@ -55,7 +60,7 @@
 					<div class="row-lg-5 fill-h" id="bottom_four" style="width: 100%;min-height: 10%;height: 40%;left: 0%;top: 60%;position: absolute;">
 						<div class="xpanel-wrapper xpanel-wrapper-2" style="height: 100%;left: 0.5%;width: 20%;position:absolute;">
 							<div class="xpanel">
-								<div class="fill-h">
+								<div class="fill-h" id="poi">
 									<h3 style="color: white">PoI饼图</h3>
 								</div>
 							</div>
@@ -85,10 +90,6 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
-		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=c6pIzPd8WxIKNAb3HxWSpboGhsS1ErDR"></script>
-		<script type="text/javascript" src="{{ url_for('static', filename='js/echarts-3.8.5.min.js') }}"></script>
-		<script type="text/javascript" src="{{ url_for('static', filename='js/echarts-bmap.js')}}"></script>
 		<script type="text/javascript">
 			$(function() {
 				/*************** 基于百度地图的热力图 **************/
@@ -121,7 +122,7 @@
 							// loop: false,
 							autoPlay: true,
 							// currentIndex: 2,
-							playInterval: 1000,
+							playInterval: 5000,
 							// controlStyle: {
 							//     position: 'left'
 							// },
@@ -206,40 +207,6 @@
 					})
 				});
 
-				// //添加百度地图插件
-				// let bmap = bmapChart.getModel().getComponent('bmap').getBMap();
-				// bmap.addControl(new BMap.MapTypeControl());
-				//
-				// bmap.addEventListener("click", function(e){
-    			// 	// alert(e.point.lng + ", " + e.point.lat);
-    			// 	get_flow(e.point.lat,e.point.lng,time_unit);
-				//
-				// });
-
-
-				// other
-				// $.getJSON('data/on_baidu.json').done(function(data) {
-				//
-				// 	$.getJSON('data/off_baidu.json').done(function(data1) {
-				// 	bmapChart.setOption({
-				// 		series: [
-				// 		{
-				// 			data: data
-				// 		},
-				// 		{
-				// 			data: data1
-				// 		}
-				// 		]
-				// 	});
-				//
-				//
-				// 	//添加百度地图插件
-        		// 	let bmap = bmapChart.getModel().getComponent('bmap').getBMap();
-        		// 	bmap.addControl(new BMap.MapTypeControl());
-				//
-				// 	});
-				// });
-
 
 				/********** 窗口大小改变时，重置报表大小 ********************/
 				window.onresize = function() {
@@ -261,6 +228,70 @@
 		</script>
 		<script type="text/javascript" src="{{ url_for('static', filename='js/three_speed_within.js')}}"></script>
 <script type="text/javascript">
+	$.ajax({
+        type: 'GET',
+            url: server_url+"/get_poi/",
+            data:{
+                'latitude':latitude,
+                'longitude':longitude,
+                'time_unit':time_unit,
+            },
+            dataType: 'json',
+            contentType: "application/json",
+            success: function(our_data,i) {
+                var dom = document.getElementById("poi");
+				var myChart = echarts.init(dom, 'dark');
+
+                var app = {};
+                option = null;
+                option = {
+ title : {
+        text: 'PoI占比',
+        // subtext: '纯属虚构',
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    // legend: {
+    //     x : 'center',
+    //     y : 'bottom',
+    //     data:['rose1','rose2','rose3','rose4','rose5','rose6','rose7','rose8']
+    // },
+    // backgroundColor:'#eafff4',
+    toolbox: {
+        show : true,
+    },
+    calculable : true,
+    series : [
+        {
+            name:'面积模式',
+            type:'pie',
+            radius : [30, 110],
+            center : ['50%', '50%'],
+            roseType : 'area',
+            data:[
+                {value:10, name:'rose1'},
+                {value:5, name:'rose2'},
+                {value:15, name:'rose3'},
+                {value:25, name:'rose4'},
+                {value:20, name:'rose5'},
+                {value:35, name:'rose6'},
+                {value:30, name:'rose7'},
+                {value:40, name:'rose8'}
+            ]
+        }
+    ]
+    };//end of option
+                if (option && typeof option === "object") {
+                    myChart.setOption(option, true);
+                }
+            },
+            error: function(xhr, type) {
+                alert("error")
+            },
+        });
 </script>
 	</body>
 </html>

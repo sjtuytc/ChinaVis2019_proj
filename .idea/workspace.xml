@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a8610b-6d63-4738-a1a7-46fbf6d44c3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/combined_graph1.0/data/speed_data_thre0.0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/combined_graph1.0/data/speed_data_thre0.3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/combined_graph1.0/data/speed_data_thre1.0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/combined_graph1.0/data/speed_scatter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/combined_graph1.0/static/js/dark.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/convert_all.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/combined_graph1.0/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/combined_graph1.0/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combined_graph1.0/static/js/dark.js" beforeDir="false" afterPath="$PROJECT_DIR$/combined_graph1.0/static/js/dark.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js" beforeDir="false" afterPath="$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/combined_graph1.0/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/combined_graph1.0/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/js/echarts-bmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/line_chart/static/js/echarts-bmap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/js/three_speed_within.js" beforeDir="false" afterPath="$PROJECT_DIR$/line_chart/static/js/three_speed_within.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/line_chart/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_script/poi_predraw.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_script/poi_predraw.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,15 +22,16 @@
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$generate_speed_data.coverage" NAME="generate_speed_data Coverage Results" MODIFIED="1559561457336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1559820623484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$flow_data_generation.coverage" NAME="flow_data_generation Coverage Results" MODIFIED="1559876558556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
+    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$poi_predraw.coverage" NAME="poi_predraw Coverage Results" MODIFIED="1560066415353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1560062821711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/line_chart" />
-    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$app.coverage" NAME="app Coverage Results" MODIFIED="1559892536834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/combined_graph1.0" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$speed_and_flow.coverage" NAME="speed_and_flow Coverage Results" MODIFIED="1559908798853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
+    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$app.coverage" NAME="app Coverage Results" MODIFIED="1560069151900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/combined_graph1.0" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="569193674">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="2" />
@@ -52,39 +47,39 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="30" />
-          <entry key="js" value="12" />
-          <entry key="json" value="9" />
-          <entry key="py" value="42" />
+          <entry key="html" value="31" />
+          <entry key="js" value="15" />
+          <entry key="json" value="10" />
+          <entry key="py" value="50" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="1" />
-          <entry key="HTML" value="30" />
-          <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="12" />
-          <entry key="Python" value="42" />
+          <entry key="HTML" value="31" />
+          <entry key="JSON" value="10" />
+          <entry key="JavaScript" value="15" />
+          <entry key="Python" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="134" />
-          <entry key="html" value="3302" />
-          <entry key="js" value="9" />
+          <entry key="Python Console" value="297" />
+          <entry key="html" value="3414" />
+          <entry key="js" value="13" />
           <entry key="json" value="5" />
-          <entry key="py" value="6155" />
+          <entry key="py" value="6384" />
           <entry key="sh" value="226" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="226" />
-          <entry key="HTML" value="3302" />
+          <entry key="HTML" value="3414" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="9" />
-          <entry key="Python" value="6289" />
+          <entry key="JavaScript" value="13" />
+          <entry key="Python" value="6681" />
         </counts>
       </usages-collector>
     </session>
@@ -92,27 +87,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/line_chart/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/combined_graph1.0/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="261" column="96" selection-start-line="261" selection-start-column="78" selection-end-line="261" selection-end-column="96" />
+            <state relative-caret-position="150">
+              <caret line="264" column="6" lean-forward="true" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -138,19 +116,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/line_chart/static/js/three_speed_within.js">
+        <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="22" selection-end-line="233" selection-end-column="11" />
+            <state relative-caret-position="273">
+              <caret line="219" column="20" lean-forward="true" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js">
+        <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/dark.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="233" column="11" selection-start-line="233" selection-start-column="11" selection-end-line="233" selection-end-column="11" />
+            <state relative-caret-position="350">
+              <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -158,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/combined_graph1.0/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="68" column="53" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="53" />
+            <state relative-caret-position="-236">
+              <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -169,18 +147,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>time_list</find>
-      <find>json</find>
-      <find>NumpyEncoder</find>
-      <find>json.lo</find>
-      <find>result</find>
       <find>500</find>
       <find>$</find>
       <find>error</find>
@@ -200,16 +173,24 @@
       <find>th</find>
       <find>con</find>
       <find>console.log</find>
-      <find>dark</find>
       <find>new bmap</find>
       <find>extension</find>
       <find>new bmap.map</find>
+      <find>load</find>
+      <find>l</find>
       <find>three</find>
       <find>bmap</find>
+      <find>dark</find>
+      <find>poi</find>
+      <find>echarts</find>
+      <find>back</find>
     </findStrings>
     <replaceStrings>
       <replace>all_speed_data</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\github\datavis\ChinaVis2019_proj\data_script</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -234,13 +215,14 @@
         <option value="$PROJECT_DIR$/line_chart/server.py" />
         <option value="$PROJECT_DIR$/data_script/speed_and_flow.py" />
         <option value="$PROJECT_DIR$/convert_all.sh" />
-        <option value="$PROJECT_DIR$/combined_graph1.0/static/js/dark.js" />
-        <option value="$PROJECT_DIR$/combined_graph1.0/app.py" />
         <option value="$PROJECT_DIR$/line_chart/templates/index.html" />
         <option value="$PROJECT_DIR$/line_chart/static/js/echarts-bmap.js" />
         <option value="$PROJECT_DIR$/line_chart/static/js/three_speed_within.js" />
+        <option value="$PROJECT_DIR$/data_script/poi_predraw.py" />
+        <option value="$PROJECT_DIR$/combined_graph1.0/app.py" />
         <option value="$PROJECT_DIR$/combined_graph1.0/templates/index.html" />
         <option value="$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js" />
+        <option value="$PROJECT_DIR$/combined_graph1.0/static/js/dark.js" />
       </list>
     </option>
   </component>
@@ -250,7 +232,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-65" />
     <option name="y" value="30" />
     <option name="width" value="1940" />
@@ -294,6 +276,17 @@
               <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
               <item name="combined_graph1.0" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="data_script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="data_script" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
@@ -344,15 +337,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="pyconsole" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myShowDebugConsoleByDefault" value="true" />
+    <option name="myIpythonEnabled" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\datavis\ChinaVis2019_proj\data_script\data" />
       <recent name="D:\github\datavis\ChinaVis2019_proj\combined_graph1.0\static\js" />
       <recent name="D:\github\datavis\ChinaVis2019_proj\combined_graph1.0\data" />
       <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\data" />
       <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph\static" />
-      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\static\js" />
@@ -372,7 +369,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.server (2)">
+  <component name="RunManager" selected="Python.app">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ChinaVis2019_proj" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -417,23 +414,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flow_data_generation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="poi_predraw" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ChinaVis2019_proj" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\conda\python.exe" />
+      <option name="SDK_HOME" value="D:\conda\envs\torch3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_script" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_script/flow_data_generation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_script/poi_predraw.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -525,17 +522,17 @@
     <list>
       <item itemvalue="Python.server" />
       <item itemvalue="Python.app" />
-      <item itemvalue="Python.flow_data_generation" />
       <item itemvalue="Python.server (2)" />
       <item itemvalue="Python.speed_and_flow" />
+      <item itemvalue="Python.poi_predraw" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.poi_predraw" />
         <item itemvalue="Python.server (2)" />
         <item itemvalue="Python.speed_and_flow" />
-        <item itemvalue="Python.app" />
         <item itemvalue="Python.server" />
-        <item itemvalue="Python.flow_data_generation" />
       </list>
     </recent_temporary>
   </component>
@@ -570,8 +567,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30311614" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37482318" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30311614" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4164306" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -580,7 +577,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.305949" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3696884" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.47592068" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32627118" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -620,6 +617,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_script/poi_predraw.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -677,20 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="314" selection-start-line="314" selection-end-line="314" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41575">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -788,20 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_script/speed_data_generation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="66" selection-start-line="66" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_script/generate_area_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="76" column="35" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_script/flow_data_generation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -838,47 +818,12 @@
         <state relative-caret-position="-2100" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/dark.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_script/speed_and_flow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-          <folding>
-            <element signature="e#1296#1307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/line_chart/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-600">
           <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combined_graph1.0/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="68" column="53" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/line_chart/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -890,10 +835,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/static/js/three_speed_within.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="22" selection-end-line="233" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/speed_data_generation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/generate_area_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="148" column="15" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/data/poi.json">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/speed_and_flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <element signature="e#1296#1307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/poi_predraw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-236">
+          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/combined_graph1.0/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="261" column="96" selection-start-line="261" selection-start-column="78" selection-end-line="261" selection-end-column="96" />
+        <state relative-caret-position="150">
+          <caret line="264" column="6" lean-forward="true" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -917,17 +942,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/line_chart/static/js/three_speed_within.js">
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="22" selection-end-line="233" selection-end-column="11" />
+        <state relative-caret-position="273">
+          <caret line="219" column="20" lean-forward="true" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js">
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/dark.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="233" column="11" selection-start-line="233" selection-start-column="11" selection-end-line="233" selection-end-column="11" />
+        <state relative-caret-position="350">
+          <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
         </state>
       </provider>
     </entry>
