@@ -12,7 +12,7 @@ $.ajax({
 
                 let time_data = {};
                 let str_all = ['0.0','0.3','1.0'];
-                let legend_all=["据赛事中心0.3km内",'距赛事中心0.3km-1.0km','据赛事中心1.0km-10.0km'];
+                let legend_all=["0.3km内",'0.3km-1.0km','1.0km-10.0km'];
                 for (j=0; j<str_all.length;j++){
                     tempstr = str_all[j];
                     time_data[tempstr] = [];
@@ -22,8 +22,7 @@ $.ajax({
                 }
 
                 var dom = document.getElementById("speed_graph");
-				var myChart = echarts.init(dom);
-                dom.style.backgroundColor = "#cdffe6";
+				var myChart = echarts.init(dom, 'dark');
 
                 var app = {};
                 option = null;
@@ -32,13 +31,14 @@ $.ajax({
             text: '区域平均速度分析',
             x:'center'
         },
-		grid: {
-            x:100,
-			y:100,
-			x2:100,
-			y2:100,
-		},
-		backgroundColor:'#cdffe6',
+		// grid: {
+        //     x:100,
+		// 	y:100,
+		// 	x2:100,
+		// 	y2:100,
+		// },
+
+		backgroundColor:'#eafff4',
         tooltip: {
             trigger: 'axis'
         },
@@ -49,17 +49,19 @@ $.ajax({
             }
         },
         yAxis: {
+            // bottom:1,
             min:10,
             splitLine: {
                 show: false
             }
         },
-        dataZoom: [{
-            startValue: '2018-05-01'
-        }, {
-            type: 'inside'
-        }],
+        // dataZoom: [{
+        //     startValue: '2018-05-01'
+        // }, {
+        //     type: 'inside'
+        // }],
         visualMap: {
+            show:false,
             top: 10,
             right : -10,
             pieces: [{
@@ -93,6 +95,7 @@ $.ajax({
         color: ['#000','#000','#000'],
         legend: {
             top:30,
+
             data:legend_all
         },
 
@@ -138,7 +141,92 @@ $.ajax({
                 if (option && typeof option === "object") {
                     myChart.setOption(option, true);
                 }
-			dom.style.backgroundColor = "#cdffe6";
+            },
+            error: function(xhr, type) {
+                alert("error")
+            },
+        });
+
+$.ajax({
+        type: 'GET',
+            url: server_url+"/get_scatter_speed/",
+            data:{
+            },
+            dataType: 'json',
+            contentType: "application/json",
+            success: function(our_data,i) {
+				var dom = document.getElementById("speed_scatter");
+				var myChart = echarts.init(dom,'shine');
+var xData = [];
+var yData = [];
+function generateData(theta, min, max) {
+    var data = [];
+    var counter = 0;
+    for (var i = 0; i < 200; i++) {
+        for (var j = 0; j < 90; j++) {
+            data.push([i, j, our_data[counter][2]]);
+            counter++;
+            // data.push([i, j, normalDist(theta, x) * normalDist(theta, y)]);
+        }
+        xData.push(parseInt(i/200*24));
+    }
+    xData.push(24);
+    for (var j = 0; j < 90; j++) {
+        yData.push(j);
+    }
+    yData.push(90);
+    return data;
+}
+var data = generateData(2, -5, 5);
+
+option = {
+       title: {
+            text: '速度随时间变化热力图',
+            x:'center'
+        },
+    tooltip: {},
+	grid:{
+           top:30,
+	},
+    xAxis: {
+        type: 'category',
+        data: xData
+    },
+    yAxis: {
+        type: 'category',
+        data: yData
+    },
+	backgroundColor:'#eafff4',
+    visualMap: {
+		show:true,
+		orient:"horizontal",
+        min: 0,
+        max: 1,
+		left:"center",
+		width:10,
+        calculable: true,
+        realtime: false,
+        inRange: {
+            color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+        }
+    },
+    series: [{
+        name: 'Gaussian',
+        type: 'heatmap',
+        data: data,
+        itemStyle: {
+            emphasis: {
+                borderColor: '#333',
+                borderWidth: 1
+            }
+        },
+        progressive: 1000,
+        animation: false
+    }]
+};
+if (option && typeof option === "object") {
+                    myChart.setOption(option, true);
+                }
             },
             error: function(xhr, type) {
                 alert("error")

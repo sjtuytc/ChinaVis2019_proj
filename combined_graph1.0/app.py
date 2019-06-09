@@ -40,6 +40,14 @@ class NumpyEncoder(json.JSONEncoder):
 def index():
     return render_template('index.html')
 
+@app.route('/get_scatter_speed/', methods=['GET'])
+def get_scatter_speed():
+    data_path = "data/speed_scatter.json"
+    with open(data_path, 'r') as f:
+        send_data = json.load(f)
+    # embed()
+    return json.dumps(send_data)
+
 @app.route('/get_speed/', methods=['GET'])
 def get_speed():
     send_data = {}

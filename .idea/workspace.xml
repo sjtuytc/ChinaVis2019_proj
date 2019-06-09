@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a8610b-6d63-4738-a1a7-46fbf6d44c3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_script/speed_and_flow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_chart/data/heatmap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_chart/data/speed_scatter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line_chart/static/js/three_speed_within.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combined_graph1.0/data/speed_data_thre0.0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combined_graph1.0/data/speed_data_thre0.3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combined_graph1.0/data/speed_data_thre1.0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combined_graph1.0/data/speed_scatter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combined_graph1.0/static/js/dark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/convert_all.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combined_graph1.0/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/combined_graph1.0/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/combined_graph1.0/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/combined_graph1.0/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_script/speed_data_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_script/speed_data_generation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/line_chart/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/display.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/echarts-3.8.5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/echarts-bmap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/echarts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/jquery-2.2.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/line_chart/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/static/js/echarts-bmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/line_chart/static/js/echarts-bmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_chart/static/js/three_speed_within.js" beforeDir="false" afterPath="$PROJECT_DIR$/line_chart/static/js/three_speed_within.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/line_chart/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/line_chart/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +28,7 @@
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$generate_speed_data.coverage" NAME="generate_speed_data Coverage Results" MODIFIED="1559561457336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1559820623484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$flow_data_generation.coverage" NAME="flow_data_generation Coverage Results" MODIFIED="1559876558556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
-    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1559904896912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/line_chart" />
+    <SUITE FILE_PATH="coverage/ChinaVis2019_proj$server__2_.coverage" NAME="server (2) Coverage Results" MODIFIED="1560062821711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/line_chart" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$app.coverage" NAME="app Coverage Results" MODIFIED="1559892536834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/combined_graph1.0" />
     <SUITE FILE_PATH="coverage/ChinaVis2019_proj$speed_and_flow.coverage" NAME="speed_and_flow Coverage Results" MODIFIED="1559908798853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_script" />
   </component>
@@ -41,50 +36,55 @@
     <session id="569193674">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="2" />
-          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="29" />
-          <entry key="js" value="6" />
+          <entry key="html" value="30" />
+          <entry key="js" value="12" />
           <entry key="json" value="9" />
-          <entry key="py" value="41" />
+          <entry key="py" value="42" />
+          <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="29" />
+          <entry key="Bash" value="1" />
+          <entry key="HTML" value="30" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="6" />
-          <entry key="Python" value="41" />
+          <entry key="JavaScript" value="12" />
+          <entry key="Python" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="134" />
-          <entry key="html" value="2802" />
-          <entry key="js" value="6" />
+          <entry key="html" value="3302" />
+          <entry key="js" value="9" />
           <entry key="json" value="5" />
-          <entry key="py" value="6153" />
+          <entry key="py" value="6155" />
+          <entry key="sh" value="226" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2802" />
+          <entry key="Bash" value="226" />
+          <entry key="HTML" value="3302" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="6" />
-          <entry key="Python" value="6287" />
+          <entry key="JavaScript" value="9" />
+          <entry key="Python" value="6289" />
         </counts>
       </usages-collector>
     </session>
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/line_chart/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-575">
-              <caret line="97" column="26" lean-forward="true" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+            <state relative-caret-position="350">
+              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -109,34 +109,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/line_chart/static/js/three_speed_within.js">
+        <entry file="file://$PROJECT_DIR$/combined_graph1.0/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="33" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_script/speed_and_flow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="156" column="17" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
+            <state relative-caret-position="195">
+              <caret line="261" column="96" selection-start-line="261" selection-start-column="78" selection-end-line="261" selection-end-column="96" />
               <folding>
-                <element signature="e#1296#1307#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/line_chart/server.py">
+        <entry file="file://$PROJECT_DIR$/line_chart/static/js/three_speed_within.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-998">
-              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="125">
+              <caret line="5" column="22" selection-end-line="233" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="233" column="11" selection-start-line="233" selection-start-column="11" selection-end-line="233" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/combined_graph1.0/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="68" column="53" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -146,22 +169,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>order_data</find>
-      <find>pre</find>
-      <find>legend</find>
-      <find>thre</find>
-      <find>display</find>
-      <find>beijing</find>
-      <find>center</find>
-      <find>setoption</find>
-      <find>time_unit</find>
       <find>time_list</find>
       <find>json</find>
       <find>NumpyEncoder</find>
@@ -175,7 +189,6 @@
       <find>server</find>
       <find>dom.</find>
       <find>legend_all</find>
-      <find>bmap</find>
       <find>tooltip</find>
       <find>start</find>
       <find>bootstrap</find>
@@ -183,6 +196,16 @@
       <find>background</find>
       <find>alert</find>
       <find>baidu</find>
+      <find>display</find>
+      <find>th</find>
+      <find>con</find>
+      <find>console.log</find>
+      <find>dark</find>
+      <find>new bmap</find>
+      <find>extension</find>
+      <find>new bmap.map</find>
+      <find>three</find>
+      <find>bmap</find>
     </findStrings>
     <replaceStrings>
       <replace>all_speed_data</replace>
@@ -204,16 +227,20 @@
         <option value="$PROJECT_DIR$/line_chart/graph/templates/index.html" />
         <option value="$PROJECT_DIR$/data_script/flow_data_generation.py" />
         <option value="$PROJECT_DIR$/line_chart/graph/server.py" />
-        <option value="$PROJECT_DIR$/combined_graph1.0/app.py" />
         <option value="$PROJECT_DIR$/line_chart/graph/three_speed_within.js" />
-        <option value="$PROJECT_DIR$/line_chart/static/js/three_speed_within.js" />
         <option value="$PROJECT_DIR$/data_script/data/flow_data.json" />
         <option value="$PROJECT_DIR$/data_script/speed_data_generation.py" />
         <option value="$PROJECT_DIR$/line_chart/data/speed_scatter.json" />
-        <option value="$PROJECT_DIR$/combined_graph1.0/templates/index.html" />
         <option value="$PROJECT_DIR$/line_chart/server.py" />
-        <option value="$PROJECT_DIR$/line_chart/templates/index.html" />
         <option value="$PROJECT_DIR$/data_script/speed_and_flow.py" />
+        <option value="$PROJECT_DIR$/convert_all.sh" />
+        <option value="$PROJECT_DIR$/combined_graph1.0/static/js/dark.js" />
+        <option value="$PROJECT_DIR$/combined_graph1.0/app.py" />
+        <option value="$PROJECT_DIR$/line_chart/templates/index.html" />
+        <option value="$PROJECT_DIR$/line_chart/static/js/echarts-bmap.js" />
+        <option value="$PROJECT_DIR$/line_chart/static/js/three_speed_within.js" />
+        <option value="$PROJECT_DIR$/combined_graph1.0/templates/index.html" />
+        <option value="$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js" />
       </list>
     </option>
   </component>
@@ -223,9 +250,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="217" />
-    <option name="y" value="507" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-65" />
+    <option name="y" value="30" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -253,12 +280,6 @@
               <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
               <item name="combined_graph1.0" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="combined_graph1.0" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,11 +294,6 @@
               <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
               <item name="combined_graph1.0" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChinaVis2019_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="data_script" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChinaVis2019_proj" type="b2602c69:ProjectViewProjectNode" />
@@ -331,17 +347,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\datavis\ChinaVis2019_proj\combined_graph1.0\static\js" />
+      <recent name="D:\github\datavis\ChinaVis2019_proj\combined_graph1.0\data" />
+      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\data" />
+      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph\static" />
+      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\static\js" />
       <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\static" />
       <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\data" />
-      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph\static" />
-      <recent name="D:\github\datavis\ChinaVis2019_proj\line_chart\graph" />
-      <recent name="D:\github\datavis\ChinaVis2019_proj\data_script" />
-      <recent name="D:\github\datavis\ChinaVis2019_proj\graph\data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -356,7 +372,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.speed_and_flow">
+  <component name="RunManager" selected="Python.server (2)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ChinaVis2019_proj" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -515,8 +531,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.speed_and_flow" />
         <item itemvalue="Python.server (2)" />
+        <item itemvalue="Python.speed_and_flow" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.server" />
         <item itemvalue="Python.flow_data_generation" />
@@ -549,12 +565,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30227882" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.230563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30311614" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30311614" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37482318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -563,9 +579,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.24929178" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.3696884" />
-      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32719547" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.305949" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3696884" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32627118" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -621,13 +637,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/generate_area_data.py" />
-    <entry file="file://$PROJECT_DIR$/line_chart/graph/static/display.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="73" column="11" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="73" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/graph/static/display.js" />
     <entry file="file://D:/conda/Lib/http/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -762,23 +772,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/line_chart/graph/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/line_chart/graph/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/graph/server.py" />
+    <entry file="file://$PROJECT_DIR$/line_chart/graph/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/graph/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -811,30 +806,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="32" column="31" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="e#180#191#0" expanded="true" />
-            <marker date="1559890348144" expanded="true" signature="2371:2921" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combined_graph1.0/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2187">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/combined_graph1.0/data/heatmap.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combined_graph1.0/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="341" column="32" lean-forward="true" selection-start-line="341" selection-start-column="32" selection-end-line="341" selection-end-column="32" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/line_chart/data/heatmap.json">
@@ -849,27 +826,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/line_chart/static/js/three_speed_within.js">
+    <entry file="file://$PROJECT_DIR$/convert_all.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="75">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/static/js/display.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/dark.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_script/speed_and_flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="e#1296#1307#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/line_chart/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-998">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="-600">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="68" column="53" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/line_chart/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="97" column="26" lean-forward="true" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+        <state relative-caret-position="350">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -881,13 +883,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_script/speed_and_flow.py">
+    <entry file="file://$PROJECT_DIR$/line_chart/static/js/echarts-bmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="156" column="17" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
+        <state relative-caret-position="-5329">
+          <caret line="156" column="44" selection-start-line="156" selection-start-column="44" selection-end-line="156" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="261" column="96" selection-start-line="261" selection-start-column="78" selection-end-line="261" selection-end-column="96" />
           <folding>
-            <element signature="e#1296#1307#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line_chart/static/js/three_speed_within.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="22" selection-end-line="233" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combined_graph1.0/static/js/three_speed_within.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="233" column="11" selection-start-line="233" selection-start-column="11" selection-end-line="233" selection-end-column="11" />
         </state>
       </provider>
     </entry>
